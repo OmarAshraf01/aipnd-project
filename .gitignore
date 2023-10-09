@@ -103,3 +103,4 @@ ENV/
 .github/**
 flowers/
 flower_data.tar.gz
+checkpoint_1.pth
