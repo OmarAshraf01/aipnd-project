@@ -1,7 +1,4 @@
 # Imports here
-%matplotlib inline
-%config InlineBackend.figure_format = 'retina'
-
 import matplotlib.pyplot as plt
 
 import argparse
@@ -68,7 +65,7 @@ def main():
 
         # TODO: Build and train your network
     learning_rate = 0.001
-    device = torch.device("cuda")
+    device = torch.device(args.device)
     model = getattr(models, args.arch)(pretrained=True)
     for param in model.parameters():
         param.requires_grad = False
