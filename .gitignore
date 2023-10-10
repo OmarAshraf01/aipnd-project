@@ -104,3 +104,4 @@ ENV/
 flowers/
 flower_data.tar.gz
 checkpoint_1.pth
+checkpoint_2.pth
