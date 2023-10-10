@@ -20,7 +20,7 @@ import time
 def arg_parse():
     parser = argparse.ArgumentParser(description="parser for train.py")
     
-    parser.add_argument("data_dir", type=str, default='flowers', help="Directory with all data")
+    parser.add_argument("--data_dir", type=str, default="flowers", help="Directory with all data")
     parser.add_argument("--save_dir", type=str, default="checkpoint_3.pth", help="Directory to checkpoints")
     parser.add_argument("--arch", type=str, default="vgg16", choices=["vgg16", "densenet121"], help="Pretrained model")
     parser.add_argument("--learning_rate", type=float, default=0.001, help="Learning rate")
